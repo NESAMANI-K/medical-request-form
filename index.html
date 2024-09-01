@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Emergency Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Employee Emergency Information</h1>
+        <p>We'll use these details only during emergency situations. Please give accurate information.</p>
+        <form id="emergencyForm">
+            <label for="firstName">Full Name *</label>
+            <div class="name-fields">
+                <input type="text" id="firstName" name="firstName" placeholder="First" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last" required>
+            </div>
+
+            <label for="age">Age *</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="bloodGroup">Blood Group *</label>
+            <select id="bloodGroup" name="bloodGroup" required>
+                <option value="" disabled selected>-Select-</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="emergencyContact">Emergency Contact Number *</label>
+            <input type="tel" id="emergencyContact" name="emergencyContact" required>
+
+            <label>Do you have any long-term illness? *</label>
+            <div class="radio-group">
+                <input type="radio" id="longTermIllnessYes" name="longTermIllness" value="Yes" required>
+                <label for="longTermIllnessYes">Yes</label>
+                <input type="radio" id="longTermIllnessNo" name="longTermIllness" value="No" required>
+                <label for="longTermIllnessNo">No</label>
+            </div>
+
+            <label>Do you have medical insurance? *</label>
+            <div class="radio-group">
+                <input type="radio" id="medicalInsuranceYes" name="medicalInsurance" value="Yes" required>
+                <label for="medicalInsuranceYes">Yes</label>
+                <input type="radio" id="medicalInsuranceNo" name="medicalInsurance" value="No" required>
+                <label for="medicalInsuranceNo">No</label>
+            </div>
+
+            <label for="insuranceAgent">Who's your insurance agent? *</label>
+            <input type="text" id="insuranceAgent" name="insuranceAgent" required>
+
+            <label>Have you ever claimed insurance? *</label>
+            <div class="radio-group">
+                <input type="radio" id="claimedInsuranceYes" name="claimedInsurance" value="Yes" required>
+                <label for="claimedInsuranceYes">Yes</label>
+                <input type="radio" id="claimedInsuranceNo" name="claimedInsurance" value="No" required>
+                <label for="claimedInsuranceNo">No</label>
+            </div>
+
+            <label for="nominee">Who's your nominee? *</label>
+            <input type="text" id="nominee" name="nominee" required>
+
+            <label for="insuranceCompany">What's your insurance company? *</label>
+            <input type="text" id="insuranceCompany" name="insuranceCompany" required>
+
+            <label>Have you undergone any surgery? *</label>
+            <div class="radio-group">
+                <input type="radio" id="surgeryYes" name="surgery" value="Yes" required>
+                <label for="surgeryYes">Yes</label>
+                <input type="radio" id="surgeryNo" name="surgery" value="No" required>
+                <label for="surgeryNo">No</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
